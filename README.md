@@ -8,22 +8,20 @@
 [✓] Xcode - develop for iOS and macOS (Xcode 13.1)
 [✓] Chrome - develop for the web
 [✓] Android Studio (version 2021.1)
-
 ```
 ### 演示图
 |![1](https://github.com/dushiling/project_image/blob/main/flutter_inappwebview_demo/granted.gif)|![2](https://github.com/dushiling/project_image/blob/main/native_import_flutter_demo/android.gif)|
 | :--: | :--: |
 |授权|禁止|
 
-### 提示
+### 错误提示
 如果允许出现如下错误：
 ![1](https://github.com/dushiling/project_image/blob/main/flutter_inappwebview_demo/error.jpg)
 
-```
-主要原因是：
-```
 
 ```
+主要原因是：
+
 Android Gradle插件需要了解新的清单元素，特别是清单合并过程。如果该插件在明显的合并中看到它不认识的元素，就会感到困惑，从而像问题中的错误一样掉出构建错误。
 
 在这种情况下，Android 11引入了<queries>作为清单元素，而旧版本的Android Gradle插件不知道该元素。
@@ -45,7 +43,9 @@ Android Gradle插件需要了解新的清单元素，特别是清单合并过程
 请在如下位置修改gradle版本至合适的补丁版本（我的环境是由3.5.0改到了3.5.4）：
 ![1](https://github.com/dushiling/project_image/blob/main/flutter_inappwebview_demo/gradle.jpg)
 
-详情请查看这篇文章：[How to fix "unexpected element <queries> found in <manifest>" error?](https://stackoverflow.com/questions/62969917/how-to-fix-unexpected-element-queries-found-in-manifest-error/62969918#62969918))
+详情请查看这篇文章：[How to fix "unexpected element <queries> found in <manifest>" error?](https://stackoverflow.com/questions/62969917/how-to-fix-unexpected-element-queries-found-in-manifest-error/62969918#62969918)
 
-### 操作
-请查看我的文章：[flutter_inappwebview的使用与问题解决方案](https://www.jianshu.com/p/bf0707988afc)
+
+### 操作说明
+请查看我的文章：
+- [flutter_inappwebview的使用与问题解决方案](https://www.jianshu.com/p/bf0707988afc)
