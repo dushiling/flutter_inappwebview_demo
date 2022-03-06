@@ -10,7 +10,7 @@
 [✓] Android Studio (version 2021.1)
 ```
 ### 演示图
-|![1](https://github.com/dushiling/project_image/blob/main/flutter_inappwebview_demo/granted.gif)|![2](https://github.com/dushiling/project_image/blob/main/native_import_flutter_demo/android.gif)|
+|![1](https://github.com/dushiling/project_image/blob/main/flutter_inappwebview_demo/granted.gif)|![2](https://github.com/dushiling/project_image/blob/main/flutter_inappwebview_demo/forbid.gif)|
 | :--: | :--: |
 |授权|禁止|
 
@@ -39,6 +39,7 @@ Android Gradle插件需要了解新的清单元素，特别是清单合并过程
 
 如果您使用的是Android Studio 4.1或更高版本，并且使用匹配的Android Gradle插件（例如，在4.1.*系列中），您应该没有任何更改。这些插件版本已经知道<queries>。
 ```
+
 
 请在如下位置修改gradle版本至合适的补丁版本（我的环境是由3.5.0改到了3.5.4）：
 ![1](https://github.com/dushiling/project_image/blob/main/flutter_inappwebview_demo/gradle.jpg)
